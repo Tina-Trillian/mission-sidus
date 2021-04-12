@@ -1,0 +1,215 @@
+#wimmelbild-neu .blue  {
+   fill: rgb(0, 154, 243) !important;
+}
+
+#wimmelbild-neu .blue path  {
+    fill: rgb(0, 154, 243) !important;
+ }
+
+#wimmelbild-neu .red {
+    fill: #f983d8 !important;
+}
+
+#wimmelbild-neu .red path {
+    fill: #f983d8 !important;
+}
+
+#wimmelbild-neu .mush-red {
+    fill: #f8583c !important;
+}
+
+#wimmelbild-neu .mush-red path {
+    fill: #f8583c !important;
+}
+
+#wimmelbild-neu .yellow {
+    fill: rgb(247, 211, 68) !important;
+}
+
+#wimmelbild-neu .yellow path {
+    fill: rgb(247, 211, 68) !important;
+}
+
+#wimmelbild-neu .green {
+    fill: #72c50c !important;
+}
+
+#wimmelbild-neu .green path {
+    fill: #72c50c !important;
+}
+
+#wimmelbild-neu .game-won .grey-1 {
+    fill: rgb(202, 202, 202);
+}
+
+#wimmelbild-neu .game-won .grey-2 {
+    fill: rgb(174, 174, 174);
+}
+
+#wimmelbild-neu .game-won .grey-3 {
+    fill: rgb(100, 100, 100);
+}
+
+#wimmelbild-neu .game-won .duck-yellow {
+    fill: rgb(233, 220, 121);
+}
+
+#wimmelbild-neu .game-won .lobster {
+    fill: rgb(249, 213, 252);
+}
+
+#wimmelbild-neu .game-won .light-red {
+    fill: rgb(247 166 166);
+}
+
+#wimmelbild-neu .game-won .light-blue {
+    fill: rgb(53, 103, 211);
+}
+
+#wimmelbild-neu .game-won .grey-bg {
+    fill: #dadada;
+}
+
+.default-fill {
+    fill: rgb(218, 218, 218) !important;
+}
+
+.clicked .moon {
+    fill: #ffe2aa !important;
+}
+
+.clicked .moon-hill {
+    fill: #f8da9e !important;
+}
+
+.clicked .astronaut {
+    fill: #b1b1b1 !important;
+}
+
+.clicked  .tentacle-top {
+    fill: rgb(104, 33, 248) !important
+}
+
+.clicked  .tentacle-bottom {
+    fill: rgb(189, 158, 250) !important
+}
+
+.clicked  .tentacle-nob {
+    fill: rgb(196, 166, 255) !important
+}
+
+path.fill-none {
+    fill: none !important;
+}
+
+path.stroke-none {
+    stroke-width: 0px !important;
+}
+
+
+#wimmelbild-neu path {
+    fill: white;
+    stroke: black;
+    stroke-width: 3;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+#wimmelbild-neu polygon {
+    fill: none;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+#wimmelbild-neu polygon {
+    fill: white;
+}
+
+ .question-box  {
+     box-sizing: border-box;
+    padding: 10px;
+ 
+    top: 10px;
+    font-size: 10px;
+    right: 0px;
+    font-family: 'Press Start 2P', cursive;
+    
+    
+    /* background-color: black; */
+    border: 1px solid rgba(0, 0, 0, 0.398);
+    background-color: rgb(218, 218, 218);
+    border-radius: 20px;
+    line-height: 20px;
+    hyphens: auto;
+
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+@media (min-width: 992px) { 
+    .question-box  {
+        position: absolute;
+        width: 16.6%;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
+    }
+ }
+
+.question-box h1 {
+    font-size: 23px;
+    line-height: 24px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+    margin: 0px;
+}
+
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    background-image: url(assets/WimmelbildHintergrund_Vers01_20210411.svg);
+    background-position: center;
+}
+
+body {
+    margin: 0px;
+}
+
+.game {
+    width: 1118px;
+    height: 846;
+    max-width: 100%;
+    height: auto;
+}
+
+#wimmelbild-neu {
+    width: 100%;
+    /* cursor: url(http://www.rw-designer.com/cursor-view/14815.png), auto; */
+}
+
+
+#screen_innen, #Wimmelbild, #tentakel {
+    cursor: pointer;
+}
+
+.wimmelbild-cont {
+    width: 1600px;
+    max-width: 100vw;
+    position: relative;
+    background-color: white;;
+}
+
+.clickable-area {
+    fill: rgba(255, 255, 255, 0);
+}
