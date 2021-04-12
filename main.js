@@ -1,6 +1,17 @@
 $( document ).ready(function() {
     console.log( "Hello, world" );
 
+
+
+
+
+    var audio = new Audio('./assets/Chad Crouch - Algorithms.mp3');
+    audio.loop = true;
+    audio.volume = 0.15;
+    var clickSound = new Audio('./assets/mixkit-select-click-1109.wav');
+    clickSound.volume = 0.5;
+
+
     var questions = [
       {
         question: 'Log entry 20210411 Landing on Georgium Sidus was successful. However, you have lost your space suit glove. Go find it. ($counter)',
@@ -53,12 +64,50 @@ $( document ).ready(function() {
     var selectedIndex = 0;
     var counter = 0;
 
+    // var stopClickListener = function() {
+    //   console.lo
+    //   $('body').off("click")
+    // }
+
+
+
+    // var startClickListener = function() {
+    //   $('body').click(function() {
+    //     console.log("Clicked")
+    //     audio.play();
+    //   })
+    //   // stopClickListener();
+    // }
+
     var startQuestions = function() {
       var missionText = getMissionText()
       $('#question').text(missionText)
       $('#mission-count').text('(' + (selectedIndex + 1) + '/' + questions.length + ')')
       setClickEventOnElements(questions[selectedIndex].ids);
     }
+
+    var startListenerOnOffButton = function() {
+      $('#sound-off-btn').click(function() {
+        $(this).addClass('display-none');
+        $('#sound-on-btn').removeClass('display-none')
+        audio.play()
+      })
+    }
+
+    var startListenerOnOnButton = function() {
+      $('#sound-on-btn').click(function() {
+        $(this).addClass('display-none');
+        $('#sound-off-btn').removeClass('display-none')
+        audio.pause();
+      })
+    }
+
+    var startSoundListener =  function() {
+      startListenerOnOffButton();
+      startListenerOnOnButton();
+    }
+
+
 
     var setCurrentQuestion = function() {
       counter = 0;
@@ -100,6 +149,7 @@ $( document ).ready(function() {
       $('#' + idElement.id).click(function() {
         console.log("Clicked")
         $(this).addClass(idElement.colorClass);
+        clickSound.play();
         $(this).off('click')
         counter += 1
         updateQuestionAndCounter()
@@ -147,6 +197,8 @@ $( document ).ready(function() {
 
     // Runtime
     startQuestions();
+    startSoundListener();
+    // startClickListener();
 
 
 

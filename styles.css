@@ -213,3 +213,8 @@ body {
 .clickable-area {
     fill: rgba(255, 255, 255, 0);
 }
+
+.display-none {
+    display: none;
+}
+
