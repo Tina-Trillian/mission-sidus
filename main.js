@@ -179,7 +179,7 @@ $( document ).ready(function() {
    var finishGame = function() {
     console.log("Finished Game")
     $('#question').fadeOut(500, function() {
-      $(this).text('Mission accomplished. Congratulations, you are a true space pioneer. TSgt. T. Reuter & Spc4 B. Voss').fadeIn(500);
+      $(this).text('Mission accomplished. Congratulations, you are a true space pioneer. TSgt. T. Reuther & Spc4 B. Voss').fadeIn(500);
       $('path#screen-path').addClass('default-fill')
       $('#screen_aussen, #tentakel, #Wimmelbild').addClass('game-won')
       
