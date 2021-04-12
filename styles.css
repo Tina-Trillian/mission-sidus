@@ -218,3 +218,7 @@ body {
     display: none;
 }
 
+#sound-off-btn, #sound-on-btn {
+    cursor: pointer;
+}
+
